@@ -1,0 +1,49 @@
+.product-rating
+{
+    color:gold;
+    font-size: large;
+}
+
+.product-rate {
+    margin-top: 0px !important;
+    width: 100px !important;
+}
+
+.error-helper-control
+{
+    border-color: #a94442 !important;
+}
+.display-none
+{
+    display: none;
+}
+.mt-30
+{
+    margin-top:30px;
+}
+.review-name-circle
+{
+    background-color:#12538c;
+    border-radius: 100%;
+    width:100px;
+    height: 100px;
+    vertical-align: middle;
+    text-align: center;
+    padding:20px 10px;
+    margin: 0px auto;
+}
+.review-name-circle a{
+    color:white;
+    font-weight: bold;
+    vertical-align: middle;
+    text-transform: uppercase;
+    font-size:3em;
+}
+.carousel-caption p{
+    font-size:18px;
+}
+
+#reviewSlider
+{
+    height:500px;
+}

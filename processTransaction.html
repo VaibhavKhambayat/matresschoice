@@ -1,0 +1,628 @@
+
+<!--changes for retry mode -->
+<!--end of changes--><!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<title>Paytm Secure Online Payment Gateway</title>
+		<meta charset="utf-8">
+		<meta name="pagepath" content="" />
+		<meta name="robots" content="noindex,nofollow" />
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+		<meta http-equiv="Pragma" content="no-cache" />
+		<meta http-equiv="Cache-Control" content="no-cache" />
+		<meta http-equiv="Expires" content="-1" />
+		<meta http-equiv="x-ua-compatible" content="IE=9" />		
+		<meta name="HandheldFriendly" content="True">
+		<meta name="MobileOptimized" content="320">
+		<meta name="apple-mobile-web-app-cable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+		<meta http-equiv="cleartype" content="on">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+		
+		<link type="image/x-icon" rel="shortcut icon" href="https://staticgw4.paytm.in/1.15.1.2/images/web/Paytm.ico" />
+		
+		<script type="text/javascript">
+			function backButtonOverride() {
+				setTimeout("backButtonOverrideBody()", 1);
+			}
+			
+			function backButtonOverrideBody() {
+				try {
+					history.forward();
+				}
+				catch (e) {
+				}
+				setTimeout("backButtonOverrideBody()", 500);
+			}
+			
+			history.forward(0);	
+			
+		</script>
+		<script>
+		var MERCHANT_USER_ID='';
+		</script>
+		<script>
+			var MERCHANT_USER_ID='';
+			</script>
+		<script>
+				var PG_ANALYTICS={}, RESTART_CHECK_JS=false,URL_RESTART_CHECK='';
+				PG_ANALYTICS.mId='SLEEPT86430586547683';
+				PG_ANALYTICS.orderId="88";
+				PG_ANALYTICS.logToConsole="false";
+				PG_ANALYTICS.logToServer="true";
+				PG_ANALYTICS.theme="merchant";
+		</script>
+	<link rel="stylesheet" type="text/css" href="https://staticgw3.paytm.in/1.15.1.2/css/web/merchant/style.min.css" />
+		<!--[if lte IE 9 ]>
+			    <script type="text/javascript" src="https://staticgw1.paytm.in/1.15.1.2/js/jquery-1.10.1.min.js"></script>
+			<![endif]-->
+			
+			<script type="text/javascript" src="https://staticgw5.paytm.in/1.15.1.2/js/web/merchant/functions.min.js"></script>
+			<script type="text/javascript" src="https://staticgw3.paytm.in/1.15.1.2/js/logger-cookie.js"></script>
+			<script>
+                 window.URL_RESTART_CHECK='https://staticgw2.paytm.in/1.15.1.2/js/web/merchant/functions.min.js';
+            </script>
+			<style>
+#login-box {
+	display: block;
+}
+
+#paytm-wallet_tab {
+	display: none;
+}
+</style>
+	<div id="csrf" data-value=""></div>
+	</head>
+
+
+
+	<body onload="backButtonOverride();">
+	<input type="hidden" id="pgTrackUrlManual" value="" />
+<input type="hidden" id="pgTrackUrlAuto" value="" />
+<div id="queryStringForSession" data-value="MID=SLEEPT86430586547683&ORDER_ID=88&route="/>
+<div id="jvmRoute" data-value=""/>
+
+<!-- CURRENCY SIGN SET --> 
+<script>
+document.body.oncopy = function() { return false; }
+document.body.oncut = function() { return false; }
+document.body.onpaste = function() { return false; }
+</script>
+<!-- Configurations -->
+		<div id="auth-config" data-value='{"ORDERID":"88","MSISDN":"","MID":"SLEEPT86430586547683","return_url":"https://securegw.paytm.in/theia/oauthResponse","EMAIL":"","ADDRESS1":"","oAuthBaseUrl":"https://accounts.paytm.com","client_id":"paytm-pg-client","wap_client_id":"paytm-pg-client-sso","ADDRESS2":""}'></div>
+		
+		<!-- For payment retry purpose --> 
+		<div id="retryPaymentMode" 
+			data-value=''>
+		</div>
+		<div id="emiPlanId" 
+			data-value=''>
+		</div>
+		
+		<div id="wallet-details"
+			data-available="true"
+			data-balance=""
+			data-wallet-only=""
+			data-wallet-used="false">
+		</div>
+		<div id="other-details" data-jsessionid="7562F0C903D7BF38564ACEDFDAC4D936.SLEEPT8643058654768388" data-save-card-mandatory=""></div>
+		
+		<div id="payment-details" 
+			data-amount="13199.0"
+			data-limeroad="false"
+			data-hybrid-allowed="false"
+			data-cod-hybrid-allowed="false"
+			data-offline-paymode=""
+			data-idebit-ic ="false"
+			></div>
+	
+		<div id="addMoney-details"
+		data-available="false"
+		data-selected="false"></div>
+		<div id="login-details"
+			data-value='false'>
+		</div>
+		<div id="current-payment-type" data-value='3'></div>
+		<div id="error-details"
+			data-available="false"
+			data-maintenancemsg="is not available due to maintenance activity. If possible, pay using a different payment option or try after sometime."
+			data-lowerrormsg="We are observing high failures on @BANK @METHOD. You can continue or try another payment option."
+		></div>
+		<div id="sucess-rate" data-mid="SLEEPT86430586547683" data-oid="88"></div>
+		<div id="auth-js-details" 
+		data-mid="SLEEPT86430586547683"
+		data-orderid="88"
+		
+		data-theme=""
+		data-retrycount="0"></div>
+		
+		<div id="isOtpLoginAvailable" data-value="true"></div>
+		<!-- Configurations --> 
+
+		<!-- Main Container -->
+		<div class="main-container">
+		
+		<!--Header Start-->
+			<div id="header">
+ 		<div class="container">
+    	<div class="fl">
+    	<div class="img img-logo" alt="Paytm Payments" title="Paytm Payments"></div>
+    		</div>
+    	
+    	<div class="user-view fr">
+    	
+    	</div>
+		
+		</div>
+  	
+  	<div class="clear"></div>
+</div><!--Header End-->
+	 
+	   
+		<div class="">
+			<!--Middle Container Start-->
+			<div class="container ">
+
+
+
+				<!-- notifications -->
+				<div class="notification-container">
+					</div>
+				<!-- notifications -->
+
+
+				<!-- summary card -->
+				<div class="card summary-card">
+	<ul class="grid mt10 mb5">
+	  <li class="merchant-name medium b">Total payment to be made to matresschoice Pvt Ltd</li>
+      <li class="fr large b">
+      	<span class="WebRupee">Rs.</span> <span id="totalAmountSpan">13199.0</span>
+      	<input type = "hidden" value = "13199.0" id = "totalAmtVal"/>
+      </li>
+      <li class="clear"></li>
+    </ul>
+    <div id="cart-details" class="fl">
+	
+	<ul class="payment-details mb10 hide">
+		<li>
+			Transaction ID: 
+			<span class="blue-text">
+				88</span>
+		</li>
+		<li>
+			</li>
+	</ul>
+	
+	<div class="blue-text">
+		<a href="#" class="btn-show-payment-details small b">Show More</a>
+		<a href="#" class="btn-hide-payment-details hide small b">Show Less</a>
+	</div>
+</div>
+<div class="clear"></div></div><!-- summary card -->
+
+
+				<!-- Login notification -->
+				<div id="login-box" >
+	<div class="notification alert alert-info blue-text-3 mb20 hide" id="login-stitch">
+			<div class="img img-walletlogo"></div>
+			<span class="b">
+				<a id="otp-btn" href="#" class="underline">Login</a>
+				</span>
+			<span> to use Paytm balance or your saved cards</span>
+	</div>
+	
+	<div class="notification alert loading blue-text-3 mb20 " id="login-wait">
+		<span class="b">
+			Checking for login. Please Wait...
+		</span>
+		<img src="https://staticgw5.paytm.in/1.15.1.2/images/loading_dots.gif" style="height:22px;margin-bottom: -6px;" class="mr10">
+	</div>
+	</div>
+<!-- Login notification -->
+
+				<!-- paytm cash card -->
+				<!-- paytm cash card -->
+
+
+
+				<!-- Merchant Payment Modes -->
+				<div id="merchant-payment-modes" class="cards-tabs relative">
+						<div id='payment-user-msg' class="large">
+	
+	<h2 class="mt10">
+		<span class="addMoneyText hide msg">SELECT AN OPTION TO ADD 
+		  <b>
+			<span class="WebRupee">Rs.</span> 
+			<span class="addMoneyAmount b">13199.0</span>
+		  </b>
+		   IN PAYTM TO PAY
+		  <b>
+			<span class="WebRupee">Rs.</span>
+			<span class="totalAmountSpan b">13199.0</span>
+		  </b>
+ 		</span>
+		
+		<span class="bankPaymentText msg">Select a payment method</span>
+				  <span class="msg no-walletTextUpdate hide">Please select an option to pay</span>
+
+		      <span class="hybridPaymentText hide msg">
+			Select an option to pay balance 
+			<b class="ml5 fr mr20">
+				<span class="WebRupee">Rs.</span> 
+				<span class="hybridMoneyAmount b"></span>
+			</b>
+		</span>
+
+		<span class="fullWalletText hide msg">
+			Uncheck Paytm to pay using other options
+		</span>
+	</h2>
+    <div class="hr mt20"></div>		
+</div>
+
+<div class="pt20 relative">
+
+	<div class="blur-overlay top-overlay"></div>
+	<!-- Cards Controls -->
+	<div class="cards-control relative grey-text">
+		<ul class="grid">
+			<li id="paytm-wallet_tab" class="card">
+        <span class="fr img img-arw-rt"></span>
+        <a href="#paytm-wallet" id="paytm-wallet">Paytm</a>
+    </li>
+<li class="card active">
+        <span class="fr img img-arw-rt"></span>
+        <a href="#nb-card">Net Banking</a>
+    </li>
+</ul>
+		<div class="blur-overlay"></div>
+	</div>
+	<!-- Cards Controls -->
+	
+	<!-- Payment mode cards -->
+	<div class="cards-content">
+		<div class="card content active" id="nb-card">
+	<div class="card-header xsmall grey-text mb10 relative">
+		<div class="fr">
+			<div class="secure lt-grey-text">
+	        	<div class="img img-lock fl" alt="Secure" title="Secure"></div>
+	        	<span>
+					<i>Your payment details are secured via
+					<br/>
+					128 Bit encryption
+					</i>
+				</span>
+	        </div>
+		</div>
+		<div class="clear"></div>
+	</div>
+	<script type="text/javascript">
+		maintainenceNBBank = new Object();
+		lowPerfNBBank = new Object();
+	</script>
+	<form autocomplete="off" name="netbanking-form" method="post" action="/theia/payment/request/submit?MID=SLEEPT86430586547683&ORDER_ID=88&route=" style="padding: 0px" class="validated">
+		<input type="hidden" name="CSRF_PARAM" value="" />
+		<input type="hidden" name="txnMode" value="NB" />
+		<input type="hidden" name="channelId" value="" />
+	 	<input type="hidden" name="AUTH_MODE" value="USRPWD" />
+	 	<input type="hidden" name="bankCode" id="bankCode">
+	 	<input type="hidden" name="walletAmount" id="walletAmountNB" value="0" />
+	 	<div id="popular-banks-wrapper">
+				<label class="mb10" for="submit-btn">SELECT FROM POPULAR BANKS</label>
+				<ul class="netbanking-panel pt20 pbanks grid banks-panel">
+					<script type="text/javascript">
+								</script>
+							
+							<li>
+								<div id="HDFC" title="HDFC" class="radio" style="background-position: center 0px;">
+									<input type="radio" class="bankRadio pcb checkbox fl" value="HDFC"  data-bankid="8565560" name="bank" >
+									<label class="fl">
+										<span class="bank-logo" alt="HDFC" style="background : url(https://staticgw5.paytm.in/1.15.1.2/images/web/bank/hdfc.png) no-repeat;"></span>
+									</label>
+								</div>
+							</li>
+						<script type="text/javascript">
+								</script>
+							
+							<li>
+								<div id="ICICI" title="ICICI" class="radio" style="background-position: center 0px;">
+									<input type="radio" class="bankRadio pcb checkbox fl" value="ICICI"  data-bankid="8565557" name="bank" >
+									<label class="fl">
+										<span class="bank-logo" alt="ICICI" style="background : url(https://staticgw4.paytm.in/1.15.1.2/images/web/bank/icici.png) no-repeat;"></span>
+									</label>
+								</div>
+							</li>
+						<script type="text/javascript">
+								
+									maintainenceNBBank["AXIS"] = true;
+								</script>
+							
+							<li>
+								<div id="AXIS" title="AXIS" class="radio" style="background-position: center 0px;">
+									<input type="radio" class="bankRadio pcb checkbox fl" value="AXIS"  data-bankid="8565566" name="bank" >
+									<label class="fl">
+										<span class="bank-logo" alt="AXIS" style="background : url(https://staticgw4.paytm.in/1.15.1.2/images/web/bank/axis.png) no-repeat;"></span>
+									</label>
+								</div>
+							</li>
+						<script type="text/javascript">
+								</script>
+							
+							<li>
+								<div id="PNB" title="PNB" class="radio" style="background-position: center 0px;">
+									<input type="radio" class="bankRadio pcb checkbox fl" value="PNB"  data-bankid="8565588" name="bank" >
+									<label class="fl">
+										<span class="bank-logo" alt="PNB" style="background : url(https://staticgw5.paytm.in/1.15.1.2/images/web/bank/pnb.png) no-repeat;"></span>
+									</label>
+								</div>
+							</li>
+						<script type="text/javascript">
+								</script>
+							
+							<li>
+								<div id="NKMB" title="NKMB" class="radio" style="background-position: center 0px;">
+									<input type="radio" class="bankRadio pcb checkbox fl" value="NKMB"  data-bankid="8565585" name="bank" >
+									<label class="fl">
+										<span class="bank-logo" alt="NKMB" style="background : url(https://staticgw3.paytm.in/1.15.1.2/images/web/bank/kotak.png) no-repeat;"></span>
+									</label>
+								</div>
+							</li>
+						<script type="text/javascript">
+								
+									lowPerfNBBank["ANDB"] = true;
+								</script>
+							
+							<li>
+								<div id="ANDB" title="ANDB" class="radio" style="background-position: center 0px;">
+									<input type="radio" class="bankRadio pcb checkbox fl" value="ANDB"  data-bankid="8565565" name="bank" >
+									<label class="fl">
+										<span class="bank-logo" alt="ANDB" style="background : url(https://staticgw3.paytm.in/1.15.1.2/images/web/bank/andhra-bank.png) no-repeat;"></span>
+									</label>
+								</div>
+							</li>
+						</ul>
+				<div class="clear"></div>
+			</div>
+		
+			<div id="other-banks-wrapper">
+				<label class="mt20 mb10" for="submit-btn">
+					OR SELECT OTHER BANK
+				</label>
+				<div id = "nbWrapper">
+					<select class="nbSelect" id = "nbSelect" data-size="5">
+						<option value = "-1">Select</option>
+						<option value="HDFC"  data-bankid="8565560">HDFC Bank</option>
+								<script type="text/javascript">
+									</script>
+						<option value="ICICI"  data-bankid="8565557">ICICI Bank</option>
+								<script type="text/javascript">
+									</script>
+						<option value="AXIS"  data-bankid="8565566">Axis Bank</option>
+								<script type="text/javascript">
+									
+										maintainenceNBBank["AXIS"] = true;
+									</script>
+						<option value="PNB"  data-bankid="8565588">Punjab National Bank</option>
+								<script type="text/javascript">
+									</script>
+						<option value="NKMB"  data-bankid="8565585">Kotak Bank</option>
+								<script type="text/javascript">
+									</script>
+						<option value="ANDB"  data-bankid="8565565">Andhra Bank</option>
+								<script type="text/javascript">
+									
+										lowPerfNBBank["ANDB"] = true;
+									</script>
+						<option value="BHARAT"  data-bankid="8565738">Bharat Bank</option>
+								<script type="text/javascript">
+									</script>
+						<option value="CANARA"  data-bankid="8565571">Canara Bank</option>
+								<script type="text/javascript">
+									</script>
+						<option value="CSB"  data-bankid="8565603">Catholic Syrian Bank</option>
+								<script type="text/javascript">
+									</script>
+						<option value="CBI"  data-bankid="8565616">Central Bank of India</option>
+								<script type="text/javascript">
+									
+										lowPerfNBBank["CBI"] = true;
+									</script>
+						<option value="CITIUB"  data-bankid="8565572">City Union Bank</option>
+								<script type="text/javascript">
+									</script>
+						<option value="CORP"  data-bankid="8565573">Corporation Bank</option>
+								<script type="text/javascript">
+									
+										lowPerfNBBank["CORP"] = true;
+									</script>
+						<option value="COSMOS"  data-bankid="8565628">Cosmos Bank</option>
+								<script type="text/javascript">
+									</script>
+						<option value="DCB"  data-bankid="8565614">DCB Bank Ltd.</option>
+								<script type="text/javascript">
+									</script>
+						<option value="DENA"  data-bankid="8565705">Dena Bank</option>
+								<script type="text/javascript">
+									
+										lowPerfNBBank["DENA"] = true;
+									</script>
+						<option value="GPPB"  data-bankid="8565818">Gopinath Patil Parsik Janata Sahakari Bank Ltd.</option>
+								<script type="text/javascript">
+									</script>
+						<option value="IDBI"  data-bankid="8565577">IDBI Bank</option>
+								<script type="text/javascript">
+									</script>
+						<option value="IDFC"  data-bankid="8565770">IDFC Bank Ltd.</option>
+								<script type="text/javascript">
+									</script>
+						<option value="INDB"  data-bankid="8565617">Indian Bank</option>
+								<script type="text/javascript">
+									</script>
+						<option value="IOB"  data-bankid="8565578">Indian Overseas Bank</option>
+								<script type="text/javascript">
+									</script>
+						<option value="INDS"  data-bankid="8565580">IndusInd Bank</option>
+								<script type="text/javascript">
+									
+										lowPerfNBBank["INDS"] = true;
+									</script>
+						<option value="JKB"  data-bankid="8565582">Jammu and Kashmir Bank</option>
+								<script type="text/javascript">
+									
+										lowPerfNBBank["JKB"] = true;
+									</script>
+						<option value="JSB"  data-bankid="8565758">Janata Sahakari Bank</option>
+								<script type="text/javascript">
+									</script>
+						<option value="KTKB"  data-bankid="8565583">Karnataka Bank</option>
+								<script type="text/javascript">
+									</script>
+						<option value="LVB"  data-bankid="8565586">Lakhsmi Vilas Bank</option>
+								<script type="text/javascript">
+									</script>
+						<option value="OBPRF"  data-bankid="8565587">Oriental Bank of Commerce</option>
+								<script type="text/javascript">
+									</script>
+						<option value="RATN"  data-bankid="8565615">RBL Bank</option>
+								<script type="text/javascript">
+									
+										lowPerfNBBank["RATN"] = true;
+									</script>
+						<option value="STB"  data-bankid="8565662">Saraswat Co-operative Bank Ltd</option>
+								<script type="text/javascript">
+									</script>
+						<option value="SIB"  data-bankid="8565590">South Indian Bank</option>
+								<script type="text/javascript">
+									</script>
+						<option value="SVC"  data-bankid="8565742">SVC Cooperative Bank Ltd</option>
+								<script type="text/javascript">
+									</script>
+						<option value="TNMB"  data-bankid="8565597">Tamilnad Mercantile Bank</option>
+								<script type="text/javascript">
+									</script>
+						<option value="UNI"  data-bankid="8565598">Union Bank of India</option>
+								<script type="text/javascript">
+									</script>
+						<option value="UBI"  data-bankid="8565602">United Bank of India</option>
+								<script type="text/javascript">
+									
+										lowPerfNBBank["UBI"] = true;
+									</script>
+						<option value="VJYA"  data-bankid="8565600">Vijaya Bank</option>
+								<script type="text/javascript">
+									
+										lowPerfNBBank["VJYA"] = true;
+									</script>
+						<option value="YES"  data-bankid="8565601">Yes Bank</option>
+								<script type="text/javascript">
+									</script>
+						<option value="UCO"  data-bankid="8565651">UCO Bank</option>
+								<script type="text/javascript">
+									</script>
+						</select>
+				</div>	
+			</div>
+			<div id="warningDiv" class="hide clear">
+				<div id="errorMsg" class="mt10"></div>
+			</div>
+			
+			<div class="mt20">
+				<div class="btn-submit  fl">
+	           		<input name="submit-btn" type="submit" class="blue-btn required btn-normal" value="Pay now" id="nbSubmit">
+	           	</div>
+
+	           	<div class="clear"></div>
+	        </div>
+	       
+		</form>
+</div>
+
+
+<script type = 'text/javascript'>
+		var bankName = "";
+		preselectedNBBank = bankName || null;
+</script>
+<div class = 'card content ' id = "upi-card">
+	<div class="card-header xsmall grey-text mb10 relative">
+		
+		<div class="clear"></div>
+	</div>
+					<!-- Merchant Payment Modes -->
+
+				<!-- Add Money Payment Modes -->
+				<!-- Add Money Payment Modes -->
+			
+				<div id="footer-placeholder" class="hide"></div>
+			</div>
+			<!--Middle Container End-->
+		</div>
+		
+		<!-- Footer Start -->
+			<div class="modals-container">
+	<div id="login-modal" class="md-modal md-effect-10" style="margin-top: -250px; margin-left: -400px;">
+		<div class="md-content">
+			<a class="closePop close-modal" href="#"></a>
+			<div id="login-spinner">
+				<img src="https://staticgw1.paytm.in/1.15.1.2/images/spinner.gif">
+				<br><br>
+				<span class="medium grey-text">Please wait...</span>
+			</div>
+			<iframe id="login-iframe" src="">
+			</iframe>
+		</div>
+	</div>
+	<div id="delete-confirm-modal" class="md-modal md-effect-10">
+		<div class="md-content">
+			<div class="text medium">
+				Are you sure you want to remove this card?
+				<br><br>
+				<span class="del-card-num">5566XXXXXXXXXX848484</span>
+			</div>
+			<div>
+				<div class="buttonCls fl mt20 ml20 deleteCard">
+	           		<input name="" type="submit" class="gry-btn btn-normal" value="Yes" id="">	          
+	           	</div>
+	           	<div class="buttonCls fl mt20 ml20 close-modal">
+	           		<input name="" type="submit" class="gry-btn btn-normal" value="No" id="">	          
+	           	</div>
+	           	<div class="clear"></div>
+	         </div>
+		</div>
+	</div>
+	<div class="md-overlay"></div>
+</div><div id="footer" class="mt50">
+	<div class="container">
+		<div class="img img-partner-logo"></div>
+	</div>
+</div><!-- Footer End -->
+		
+		</div>
+		<!-- Main Container -->
+		<script>
+		
+	        var counterToCheck=10;
+		    var cl= setInterval(function(){
+			 	if(window.RESTART_CHECK_JS || counterToCheck==0){
+			  		clearInterval(cl);
+			 	} else {
+			 		counterToCheck--;
+				 	if(!window.RESTART_CHECK_JS && counterToCheck!=0) {
+	 				// load js again every three seconds
+	 				(function(){ 
+	 				     var f = document.createElement('script'); 
+					     f.type = 'text/javascript'; 
+					     f.async = false; 
+					     
+					     f.src = window.URL_RESTART_CHECK; 
+					     var s = document.getElementsByTagName('script')[0]; 
+					     s.parentNode.insertBefore(f,s); 
+					})();
+				};
+			 }
+			},3000);
+ 			
+		
+		</script>
+	</body>
+</html>
