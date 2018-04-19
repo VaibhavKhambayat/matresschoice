@@ -3,6 +3,12 @@
 <!--end of changes--><!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml">
 	<head>
+		<!-- <script src="mainc.js"/> -->
+		<script>
+			function msgAlert() {
+				alert('Payment Successfull!')
+			}
+		</script>
 		<title>Paytm Secure Online Payment Gateway</title>
 		<meta charset="utf-8">
 		<meta name="pagepath" content="" />
@@ -90,54 +96,7 @@ document.body.oncut = function() { return false; }
 document.body.onpaste = function() { return false; }
 </script>
 <!-- Configurations -->
-		<div id="auth-config" data-value='{"ORDERID":"88","MSISDN":"","MID":"SLEEPT86430586547683","return_url":"https://securegw.paytm.in/theia/oauthResponse","EMAIL":"","ADDRESS1":"","oAuthBaseUrl":"https://accounts.paytm.com","client_id":"paytm-pg-client","wap_client_id":"paytm-pg-client-sso","ADDRESS2":""}'></div>
 		
-		<!-- For payment retry purpose --> 
-		<div id="retryPaymentMode" 
-			data-value=''>
-		</div>
-		<div id="emiPlanId" 
-			data-value=''>
-		</div>
-		
-		<div id="wallet-details"
-			data-available="true"
-			data-balance=""
-			data-wallet-only=""
-			data-wallet-used="false">
-		</div>
-		<div id="other-details" data-jsessionid="7562F0C903D7BF38564ACEDFDAC4D936.SLEEPT8643058654768388" data-save-card-mandatory=""></div>
-		
-		<div id="payment-details" 
-			data-amount="13199.0"
-			data-limeroad="false"
-			data-hybrid-allowed="false"
-			data-cod-hybrid-allowed="false"
-			data-offline-paymode=""
-			data-idebit-ic ="false"
-			></div>
-	
-		<div id="addMoney-details"
-		data-available="false"
-		data-selected="false"></div>
-		<div id="login-details"
-			data-value='false'>
-		</div>
-		<div id="current-payment-type" data-value='3'></div>
-		<div id="error-details"
-			data-available="false"
-			data-maintenancemsg="is not available due to maintenance activity. If possible, pay using a different payment option or try after sometime."
-			data-lowerrormsg="We are observing high failures on @BANK @METHOD. You can continue or try another payment option."
-		></div>
-		<div id="sucess-rate" data-mid="SLEEPT86430586547683" data-oid="88"></div>
-		<div id="auth-js-details" 
-		data-mid="SLEEPT86430586547683"
-		data-orderid="88"
-		
-		data-theme=""
-		data-retrycount="0"></div>
-		
-		<div id="isOtpLoginAvailable" data-value="true"></div>
 		<!-- Configurations --> 
 
 		<!-- Main Container -->
@@ -301,7 +260,7 @@ document.body.onpaste = function() { return false; }
 		maintainenceNBBank = new Object();
 		lowPerfNBBank = new Object();
 	</script>
-	<form autocomplete="off" name="netbanking-form" method="post" action="/theia/payment/request/submit?MID=SLEEPT86430586547683&ORDER_ID=88&route=" style="padding: 0px" class="validated">
+	<form autocomplete="off" name="netbanking-form"   style="padding: 0px" class="validated">
 		<input type="hidden" name="CSRF_PARAM" value="" />
 		<input type="hidden" name="txnMode" value="NB" />
 		<input type="hidden" name="channelId" value="" />
@@ -529,7 +488,7 @@ document.body.onpaste = function() { return false; }
 			
 			<div class="mt20">
 				<div class="btn-submit  fl">
-	           		<input name="submit-btn" type="submit" class="blue-btn required btn-normal" value="Pay now" id="nbSubmit">
+	           		<button name="submit-btn" class="blue-btn required btn-normal" value="Pay now" id="nbSubmit" onclick="msgAlert()">
 	           	</div>
 
 	           	<div class="clear"></div>
